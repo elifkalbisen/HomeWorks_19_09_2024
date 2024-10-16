@@ -1,0 +1,70 @@
+****HTML Nedir?
+
+HTML (HyperText Markup Language), web sayfalarının iskeletini oluşturan bir işaretleme dilidir. Web tarayıcıları tarafından okunarak web sayfasının yapısını belirler. HTML; başlıklar, paragraflar, bağlantılar, görüntüler gibi öğeleri içerir. HTML, kök <html> etiketi içinde yazılır ve genellikle <head> ve <body> bölümlerinden oluşur.
+
+Yaygın HTML Etiketleri:
+
+<h1>, <h2>, ..., <h6> - Başlık etiketleri
+<p> - Paragraf etiketi
+<a> - Bağlantı (anchor) etiketi
+<img> - Görüntü eklemek için kullanılan etiket
+<div> - Bölümleme etiketi, sayfa düzenini oluşturmak için kullanılır
+
+****CSS Nedir?
+
+CSS (Cascading Style Sheets), web sayfalarının görünümünü ve düzenini kontrol eden bir stil dilidir. HTML içeriğine renk, yazı tipi, düzen gibi stiller ekler.
+
+Stil Verme Yöntemleri:
+
+Inline CSS: HTML etiketinin içinde style özniteliği ile kullanılır.
+
+<p style="color: blue;">Bu bir paragraftır.</p>
+Internal CSS: <style> etiketleri arasında, HTML dosyasının <head> bölümünde tanımlanır.
+
+<style>
+    p { color: blue; }
+</style>
+External CSS: Harici bir .css dosyasına yazılır ve <link> etiketi ile HTML'e bağlanır.
+
+<link rel="stylesheet" href="styles.css">
+
+
+****JavaScript Nedir?
+
+JavaScript, web sayfalarına etkileşim kazandıran bir programlama dilidir. Dinamik içerik ekleme, animasyonlar, kullanıcı girdilerini işleme gibi işlevlerde kullanılır. HTML ve CSS ile birlikte çalışarak web sayfalarının daha dinamik ve kullanıcı odaklı olmasını sağlar.
+
+JavaScript Kod Örneği:
+
+document.getElementById("myButton").addEventListener("click", function() {
+    alert("Butona tıklandı!");
+});
+
+Bu örnekte, bir düğmeye tıklandığında kullanıcıya bir uyarı mesajı gösterilir.
+
+****Web Tarayıcıları ve DOM
+
+Web tarayıcıları (Chrome, Firefox, Safari, vb.), kullanıcıların web sayfalarını görüntülemelerini sağlar. Tarayıcılar, HTML ve CSS dosyalarını indirip analiz eder, ardından sayfayı kullanıcının ekranında gösterir. DOM (Document Object Model), HTML belgesinin yapısal bir temsilidir ve JavaScript ile etkileşime geçilmesini sağlar.
+
+HTML ve CSS İşleme Süreci:
+
+HTML belgesi yüklendiğinde tarayıcı, DOM'u oluşturur.
+CSS dosyaları işlenerek DOM'daki öğelere uygulanır.
+
+****Responsive Design Nedir?
+
+Responsive Design, bir web sayfasının çeşitli cihazlarda (telefon, tablet, masaüstü) uyumlu görünmesini sağlayan tasarım yaklaşımıdır. Media query kullanılarak farklı ekran boyutları için özel stil kuralları tanımlanır.
+
+Responsive Tasarım Örneği:
+
+/* Masaüstü */
+body {
+    font-size: 16px;
+}
+
+/* Mobil */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+Bu örnek, mobil cihazlarda metin boyutunu küçültür, böylece metin daha iyi okunabilir hale gelir.
